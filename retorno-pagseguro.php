@@ -4,10 +4,11 @@ header("access-control-allow-origin: https://sandbox.pagseguro.uol.com.br");
 
 if (count($_POST) > 0) {
 
-    $email = "vendas@simplework.com.br";
-    $token = "E662BD4A9EB34F47AD7D66FEA38A8619";
-    //$notificationCode = $_POST['notificationCode'];
-    $notificationCode = '2667312FB97AB97A0A8114DD5FA628633347';
+    $email = ""; // e-mail pagseguro
+    $token = ""; // token Pagseguro
+    $notificationCode = $_POST['notificationCode'];
+
+    // endereço em sandbox, para alterar so remover sandbox do url
     $url = "https://ws.sandbox.pagseguro.uol.com.br/v2/transactions/notifications/"
             . $notificationCode . "?email=" . $email . "&token=" . $token;
 
