@@ -8,3 +8,7 @@ Algumas variáveis tem como retorno códigos, para praticidade coloquei as segui
 * descricaoTipoPagamento
 * descricaoDetalhadaTipoPagamento
 * descricaoMeioPagamento
+
+Peencher as variáveis email e token com os seus dados.
+
+Exemplo esta com url apontando para o sandbox.
